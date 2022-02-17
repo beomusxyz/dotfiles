@@ -1,7 +1,7 @@
 ## X Server Initialisation File ##
 
 # Multi monitor setup for Dad's house
-xrandr --output DP-2 --auto --left-of eDP-1
+xrandr --output DP2 --auto --left-of eDP1
 
 # Compositor
 picom --backend glx &
@@ -10,7 +10,7 @@ picom --backend glx &
 slstatus &
 
 # Wallpaper 
-feh --bg-fill ~/Pictures/Wallpapers/pixelart/Waterfall-treehouse.jpg
+feh --bg-fill /home/beomus/git/dotfiles/wallpaper.jpg
 
 # Fix Java Applications working with tiling wm
 export _JAVA_AWT_WM_NONREPARENTING=1
