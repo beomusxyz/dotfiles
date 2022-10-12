@@ -1,7 +1,10 @@
 ## X Server Initialisation File ##
 
-# Multi monitor setup for Dad's house
-xrandr --output DP2 --auto --left-of eDP1
+# Killing bluetoth just in case
+bluetoothctl power off &
+
+# Multi monitor setup 
+xrandr --output DP2-1 -s 2560x1440 --auto --right-of eDP1
 
 # Compositor
 picom --backend glx &
@@ -10,7 +13,7 @@ picom --backend glx &
 slstatus &
 
 # Wallpaper 
-feh --bg-fill /home/beomus/git/dotfiles/wallpaper.jpg
+feh --bg-scale /home/beomus/git/dotfiles/wallpaper.jpg
 
 # Fix Java Applications working with tiling wm
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -18,6 +21,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 # Fix dmenu path not showing any programs
 rm  ~/.cache/dwm_run
 
-# Window Manager
-exec dwm
+# Start ssh-agent 
+ssh-agent dwm
 
+# Window Manager
+exec ssh-agent dwm
