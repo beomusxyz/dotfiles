@@ -1,9 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+export PATH=/home/dave/work:$PATH
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -103,9 +102,14 @@ source $ZSH/oh-my-zsh.sh
 ### USER EDITS ###
 export EDITOR=nvim
 
+
 # Autorun
 pfetch
 
 # Aliases
 alias ssh="kitty +kitten ssh"
+alias mac="sudo ifconfig wlan0 down && sudo macchanger -e wlan0 && sudo ifconfig wlan0 up"
 alias l="clear && pfetch"
+alias nb="newsboat"
+alias z="zathura"
+alias minecraft='ssh minecraft@194.195.248.144'
