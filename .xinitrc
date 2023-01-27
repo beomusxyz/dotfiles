@@ -13,7 +13,7 @@ picom --backend glx &
 slstatus &
 
 # Wallpaper 
-feh --bg-scale /home/beomus/git/dotfiles/wallpaper.jpg
+feh --bg-fill ~/git/dotfiles/wallpaper.jpg
 
 # Fix Java Applications working with tiling wm
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -25,4 +25,7 @@ rm  ~/.cache/dwm_run
 ssh-agent dwm
 
 # Window Manager
-exec ssh-agent dwm
+exec dwm
+
+# Set Brightness to value that doesn't murder battery
+echo 30000 | tee /sys/class/backlight/intel_backlight/brightness
