@@ -1,0 +1,4 @@
+#!/bin/sh
+bookmark="$(xclip -o)"
+file="/home/beomus/.local/share/bookmarks/bookmarks.txt"
+echo "$bookmark" >> "$file"
