@@ -26,6 +26,3 @@ ssh-agent dwm
 
 # Window Manager
 exec dwm
-
-# Set Brightness to value that doesn't murder battery
-echo 30000 | tee /sys/class/backlight/intel_backlight/brightness

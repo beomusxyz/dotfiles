@@ -19,7 +19,6 @@ export BROWSER=librewolf
 pfetch
 
 # Aliases
-alias ssh="kitty +kitten ssh"
 alias mac="sudo ifconfig wlan0 down && sudo macchanger -e wlan0 && sudo ifconfig wlan0 up"
 alias l="clear && pfetch"
 alias ls='ls --color=auto'
