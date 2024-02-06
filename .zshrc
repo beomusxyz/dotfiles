@@ -1,7 +1,8 @@
 ### Beomus's ZSHrc ###
 
 # Set Prompt
-PROMPT="%B%n%b%F{246}@%f%B%F{cyan}%m%f%b  %F{yellow}%~%f  %F{246}[%f%F{246}%?%f%F{246}]%f %B%F{red}$%f%b "
+PROMPT="%B%n%b%F{246}@%f%B%F{cyan}%m%f%b %F{yellow}%~%f 
+%F{246}[%f%F{246}%?%f%F{246}]%f %B%F{red}$%f%b "
 
 # Case-Insensitive Autocomplete
 autoload -U compinit && compinit
