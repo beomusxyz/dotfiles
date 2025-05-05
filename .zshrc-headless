@@ -13,18 +13,10 @@ bindkey -e
 
 # Defaults
 export EDITOR=nvim
-export BROWSER=librewolf
-
-
-# Autorun
-pfetch
 
 # Aliases
-alias l="clear && pfetch"
+alias l="clear"
 alias ls='ls --color=auto'
-alias nb="newsboat"
-alias z="zathura"
-
 
 # Zsh Syntax Highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
